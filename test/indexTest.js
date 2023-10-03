@@ -68,3 +68,11 @@ describe('employees', function() {
     });
   });
 });
+function destructivelyDeleteFromEmployeeByKey(employee, key) {
+  delete employee[key];
+  return employee;
+}
+let employee = {
+  name: "John Doe",
+  streetAddress: "123 Main St"
+};
